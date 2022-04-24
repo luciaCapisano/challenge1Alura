@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<img src="/assets/images/Logo-1.png">
+	</header>
+
+	<main>
+		<section class="encriptador">
+			<form action="" method="get">
+
+				<input class="input-texto" name="text" id="text" cols="35" rows="5" placeholder="Ingrese el texto aquí">
+				</input>
+				<br>
+				<button class="button-encriptar" id="encriptar">ENCRIPTAR</button>
+				<button class="button-desencriptar" id="desencriptar" type="submit">DESENCRIPTAR</button>
+			</form>
+		</section>
+
+		<section class="mostrar-texto">
+			<p class="texto-procesado"></p>
+			<button class="copiar" type="submit">COPIAR TEXTO</button>
+		</section>
+
+	</main>
+
+
+	<footer>
+		<p> &copy Copyright 2022 Proyecto Alura </p>
+	</footer>
+</body>
+
+<script src="scripts/encriptador.js"></script>
+<script src="scripts/desencriptador.js"></script>
+<script src="scripts/copiar.js"></script>
+
+</html>
