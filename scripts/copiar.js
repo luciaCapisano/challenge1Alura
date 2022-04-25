@@ -4,7 +4,6 @@ var boton = document.querySelector('.copiar');
 boton.addEventListener('click', copiarTexto);
 
 function copiarTexto(){
-    alert("Texto copiado correctamente");
-    navigator.clipboard.writeText(textoProcesado.textContent);
+    navigator.clipboard.writeText(textoProcesado.textContent)
+         .then(() => alert("Texto copiado correctamente"));
 };
-

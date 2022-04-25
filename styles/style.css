@@ -62,7 +62,7 @@ header {
 	position: absolute;
 	background-color: aqua;
 	display: inline;
-	height: 60%;
+	height: 80%;
 	width: 400px;
 	left: 65%;
 	top: 40px;
@@ -77,6 +77,11 @@ header {
 	line-height: 150%;
 	color: #495057;
 	padding: 5%;
+}
+
+
+.invisible{
+	display: none;
 }
 
 .copiar{
@@ -98,8 +103,6 @@ header {
 	text-align: center;
 	color: #0A3871;
 }
-
-
 
 footer{
 	position: relative;
