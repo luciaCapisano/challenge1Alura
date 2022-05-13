@@ -1,12 +1,11 @@
 var imagen = document.querySelector('.img-mostrar-texto');
 var textoProcesado = document.querySelector(".texto-procesado");
+var aviso = document.querySelector('.alerta');
+var input = document.getElementById('.input-texto');
 
 function ocultarImagen(){
-    if (textoProcesado.textContent.length > 0) {
         imagen.classList.add("invisible");
     }
-}
-
 
 function validarTexto(texto) {
     var vacio = textoVacio(texto);
@@ -15,22 +14,22 @@ function validarTexto(texto) {
 	var may = mayusculas(texto);
 
 	if (vacio) {
-		console.log("El texto no puede estar vacio");
+		aviso.textContent = "El texto no puede estar vacio";
 		return true;
 	} else if (carEspeciales) {
-		console.log("El texto no puede contener caracteres especiales");
+		aviso.textContent = "El texto no puede contener caracteres especiales";
 		return true;
 	} else if (tildes) {
-		console.log("El texto no puede tener acentos");
+		aviso.textContent = "El texto no puede tener acentos";
 		return true;
 	} else if (may) {
-		console.log("El texto no puede contener mayusculas");
+		aviso.textContent = "El texto no puede contener mayusculas";
 		return true;
-	} 
+	}
 }
 
 function textoVacio(texto) {
-    if(texto.length == 0){
+    if(texto.length == 0 || texto == null || texto == "" || texto == " "){
         return true;
     } else {
         return false;

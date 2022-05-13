@@ -1,5 +1,5 @@
 var textoProcesado = document.querySelector(".texto-procesado"); 
-var boton = document.querySelector('.copiar');
+var boton = document.querySelector('.button-copiar');
 
 boton.addEventListener('click', copiarTexto);
 

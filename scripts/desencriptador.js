@@ -1,18 +1,18 @@
 var botonDesencriptar = document.querySelector(".button-desencriptar");
+var aviso = document.querySelector('.alerta');
 
 botonDesencriptar.addEventListener("click", function () {
 	event.preventDefault();
 	var texto = document.querySelector('.input-texto');
 	var textoInput = texto.value;
-
 	var validacion = validarTexto(textoInput);
-
 	if (!validacion) {
-        console.log(textoInput);
+		aviso.textContent = " El texto se ha desencriptado correctamente!";
+		ocultarImagen();
 		desencriptarTexto();
+
 	}
 });
-
 
 function desencriptarTexto() {
 	event.preventDefault();
